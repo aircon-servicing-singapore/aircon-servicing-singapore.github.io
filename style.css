@@ -1,0 +1,414 @@
+/* Custom Stylesheet for Digital Team Site 
+
+---------------------------------------------
+Table of contents
+---------------------------------------------
+01. GENERAL
+02. HEADER 
+03. HOME BANNER
+04. ABOUT US
+05. ARTICLE
+06. OUR SERVICES
+07. CONTACT US
+08. PAGE BANNER
+09. SERVICES SINGLE
+10. PRICING
+11. FOOTER
+12. RESPONSIVE
+--------------------------------------------- */
+
+/* 01. GENERAL */
+	body{
+		font-family: 'Montserrat', sans-serif;
+		color: #333333;
+	}
+	.container{ width: 1000px; }
+
+	/* Button */
+		.btn-default{
+			background: transparent;
+	    border: 4px solid #ffffff;
+	    border-radius: 0;
+	    font-size: 15px;
+	    font-weight: bold;
+	    letter-spacing: 2px;
+	    padding: 12px 42px;
+	    color: #fff;
+		}
+		.btn-default:hover{
+			background: #fff;
+		}
+		.btn:focus{
+			box-shadow: 0 0 0 0;
+		}
+
+/* 02. HEADER */
+	.navbar{ 
+		border-top: 6px solid #FFD321; 
+		border-bottom: 1px solid #eeeeee;
+	}
+	.navbar .container{  }
+	.navbar .navbar-brand{
+		color: #303030;
+    font-size: 40px;
+    font-weight: 700;
+	}
+	.navbar .navbar-toggler{  }
+	.navbar .navbar-toggler .navbar-toggler-icon{  }
+	.navbar .header-menu{  }
+	.navbar .header-menu .navbar-nav{  }
+	.navbar .header-menu .navbar-nav .nav-item{  }
+	.navbar .header-menu .navbar-nav .nav-item .nav-link{
+		color: #505050;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding-right: 20px;
+    padding-left: 20px;
+	}
+	.navbar .header-menu .navbar-nav .nav-item .nav-link:hover{ color: #FFD321; }
+	.navbar .header-menu .navbar-nav .nav-item .nav-link.active{ color: #FFD321; }
+	.navbar .header-menu .navbar-nav .nav-item .dropdown-menu{
+		margin-top: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 0;
+    padding: 10px 10px;
+    border-top: 2px solid #FFD321;
+	}
+	.navbar .header-menu .navbar-nav .nav-item .dropdown-menu li{  }
+	.navbar .header-menu .navbar-nav .nav-item .dropdown-menu li .dropdown-item{
+		color: #505050;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 8px 25px;
+	}
+	.navbar .header-menu .navbar-nav .nav-item .dropdown-menu li .dropdown-item:hover,
+	.navbar .header-menu .navbar-nav .nav-item .dropdown-menu li .dropdown-item.active{
+		background: #ffffff;
+    color: #FFD321;
+	}
+
+/* 03. HOME BANNER */
+	#home-banner{ 
+		background-image: url(/aircon-servicing-singapore.jpeg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    height: 100vh;
+    padding: 100px 0;
+	}
+	#home-banner .container{  }
+	#home-banner .container .row{  }
+	#home-banner .title{
+		font-size: 48px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 3px 3px 5px #555;
+	}
+	#home-banner .subtitle{
+		font-size: 24px;
+    color: #fff;
+    margin-top: 30px;
+    text-shadow: 3px 3px 5px #555;
+	}
+	#home-banner hr{
+		color: #ffffff;
+    width: 250px;
+    margin: 45px auto;
+	}
+
+/* 04. ABOUT US */
+	#about-us{
+		padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+	}
+	#about-us .col-md-12 {
+    padding-left: 10%;
+    padding-right: 10%;		
+	}
+	#about-us .heading{		
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 3px;
+	}
+	#about-us .subtitle{
+		font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 35px;
+	}
+	#about-us p{
+		font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+
+/* 05. ARTICLE */
+	#article-dark-section{
+		background: #f8f8f8;
+    padding-top: 80px;
+    padding-bottom: 80px;
+	}
+	#article-dark-section .content-column{ padding-right: 50px; }
+	#article-dark-section .content-column .heading{
+		font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+	#article-dark-section .content-column p{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+	#article-dark-section .image-column{  }
+	#article-dark-section .image-column img{ width: 100%; }
+
+	#article-light-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+	}
+	#article-light-section .content-column{ padding-left: 50px; }
+	#article-light-section .content-column .heading{
+		font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+	#article-light-section .content-column p{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+	#article-light-section .image-column{  }
+	#article-light-section .image-column img{ width: 100%; }
+
+/* 06. OUR SERVICES */
+	#our-services{
+		background: #FFD321;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+	}
+	#our-services .section-title{  }
+	#our-services .section-title .heading{
+		font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+	}
+	#our-services .section-title .subtitle{
+		font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 35px;
+    text-align: center;
+	}
+	#our-services .icon-box{ padding: 35px 35px 0; }
+	#our-services .icon-box .title{
+		font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 0px;
+    letter-spacing: 5px;
+	}
+	#our-services .icon-box .title .bi{
+		height: 25px;
+    width: 25px;
+    margin-right: 5px;
+	}
+	#our-services .icon-box hr{
+		margin: 0 0 25px;
+    color: #ffffff;
+	}
+	#our-services .icon-box p{
+		font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+
+/* 07. CONTACT US */
+	#contact-us{
+		padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+	}
+	#contact-us .section-title{  }
+	#contact-us .section-title .heading{
+		font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 3px;
+	}
+	#contact-us .section-title .subtitle{
+		font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 35px;
+    text-align: center;
+	}
+	#contact-us .map-column{
+		    margin-top: 45px;
+    margin-bottom: 25px;
+	}
+	#contact-us .map-column iframe{ width: 100%; }
+	#contact-us .icon-box{  }
+	#contact-us .icon-box .heading{
+		font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+	}
+	#contact-us .icon-box .heading .icon{
+		width: 35px;
+    height: 35px;
+    display: block;
+    margin: 0 auto 10px;
+	}
+	#contact-us .icon-box p{
+		font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+
+/* 08. PAGE BANNER */
+	#page-banner{
+		padding: 60px 0 50px;
+    background: #FFD321;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 5px #b0b0b0;
+	}
+	#page-banner .title{
+		font-weight: 700;
+    letter-spacing: 2px;
+	}
+
+/* 09. SERVICES SINGLE */
+	#services-single{
+		padding-top: 80px;
+    padding-bottom: 80px;
+	}
+	#services-single .image-column{ padding: 0 20px; }
+	#services-single .image-column img{ 
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	#services-single .content-column{ padding: 0 20px; }
+	#services-single .content-column .heading{
+		font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  #services-single .content-column p,
+  #services-single .content-full-column p{
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+	}
+	#services-single .content-full-column{ padding: 0 20px; }
+
+/* 10. PRICING */
+	#pricing{
+		padding-top: 80px;
+    padding-bottom: 80px;
+	}
+	#pricing .card{  }
+	#pricing .section-title{  }
+	#pricing .section-title .heading{
+		font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-top: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 65px;
+	}
+	#pricing .card .card-body{  }
+	#pricing .card .card-body .card-title{
+		font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    line-height: 24px;
+	}
+	#pricing .card .card-body .card-text{
+		font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 2px;
+	}
+
+/* 11. FOOTER */
+	footer{
+		background: #111112;
+    padding: 25px 0;
+	}
+	footer p{
+		color: #828282;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+	}
+	footer a{
+		color: #ffd32185;
+    text-decoration: none;
+	}
+	footer a:hover{ color: #FFD321; }
+
+/* 12 RESPONSIVE */
+	/* Tablet */
+		@media only screen and (max-width: 768px){
+			.container{ width: 100%; }
+
+			#home-banner{ height: auto; }
+			#home-banner .title{ font-size: 32px; }
+			#home-banner .subtitle{ font-size: 16px; }
+			#home-banner hr{ margin: 20px auto 45px; }
+			#home-banner .btn{  }
+
+			#article-light-section .content-column,
+			#article-dark-section .content-column{ 
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		@media only screen and (max-width: 480px){
+			#about-us,
+			#our-services,
+			#contact-us,
+			#article-light-section,
+			#article-dark-section,
+			#services-single,
+			#pricing{
+				padding-top: 45px;
+    		padding-bottom: 45px;
+			}
+			#about-us .col-md-12{
+				padding-left: 5%;
+    		padding-right: 5%;
+			}
+		}
